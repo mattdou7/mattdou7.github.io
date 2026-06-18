@@ -1,24 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-	<channel>
-		<title>Power Apps on Matthew Doucette-Frazee Portfolio</title>
-		<link>https://github.com/mattdou7/mattdou7.github.io/tags/power-apps/</link>
-		<description>Recent content in Power Apps on Matthew Doucette-Frazee Portfolio</description>
-		<generator>Hugo</generator>
-		<language>en-us</language>
-		
-		
-		
-		
-			<lastBuildDate>Mon, 15 Jun 2026 00:00:00 +0000</lastBuildDate>
-		
-			<atom:link href="https://github.com/mattdou7/mattdou7.github.io/tags/power-apps/index.xml" rel="self" type="application/rss+xml" />
-			<item>
-				<title>How I Used Power Apps to Automate Fleet Operations</title>
-				<link>https://github.com/mattdou7/mattdou7.github.io/blogs/my-first-post/</link>
-				<pubDate>Mon, 15 Jun 2026 00:00:00 +0000</pubDate>
-				<guid>https://github.com/mattdou7/mattdou7.github.io/blogs/my-first-post/</guid>
-				<description>&lt;p&gt;In my role as Fleet Coordinator, I identified inefficiencies in how fleet data was tracked and managed manually.&lt;/p&gt;&#xA;&lt;p&gt;To solve this, I built a Power Apps solution that:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Centralized fleet tracking&lt;/li&gt;&#xA;&lt;li&gt;Automated scheduling&lt;/li&gt;&#xA;&lt;li&gt;Provided real-time visibility&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;This reduced manual work, improved accuracy, and allowed better decision-making.&lt;/p&gt;&#xA;&lt;p&gt;This project showed me how powerful automation can be when applied to real business problems.&lt;/p&gt;</description>
-			</item>
-	</channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Power Apps on Matthew Doucette-Frazee Portfolio</title><link>https://mattdou7.github.io/tags/power-apps/</link><description>Recent content in Power Apps on Matthew Doucette-Frazee Portfolio</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 15 Jun 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://mattdou7.github.io/tags/power-apps/index.xml" rel="self" type="application/rss+xml"/><item><title>How I Used Power Apps to Automate Fleet Operations</title><link>https://mattdou7.github.io/blogs/my-first-post/</link><pubDate>Mon, 15 Jun 2026 00:00:00 +0000</pubDate><guid>https://mattdou7.github.io/blogs/my-first-post/</guid><description>&lt;p&gt;In my role as Fleet Coordinator, I identified inefficiencies in how fleet data was tracked and managed manually.&lt;/p&gt;
+&lt;p&gt;To solve this, I built a Power Apps solution that:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Centralized fleet tracking&lt;/li&gt;
+&lt;li&gt;Automated scheduling&lt;/li&gt;
+&lt;li&gt;Provided real-time visibility&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This reduced manual work, improved accuracy, and allowed better decision-making.&lt;/p&gt;
+&lt;p&gt;This project showed me how powerful automation can be when applied to real business problems.&lt;/p&gt;</description></item></channel></rss>
