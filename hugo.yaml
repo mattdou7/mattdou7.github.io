@@ -1,0 +1,232 @@
+baseURL: "https://mattdou7.github.io"
+languageCode: "en-us"
+title: "Matthew Doucette-Frazee Portfolio"
+theme: hugo-profile
+canonifyURLs: true
+
+defaultContentLanguage: "en"
+
+languages:
+  en:
+    languageName: "English"
+    weight: 1
+    contentDir: "content"
+    menu:
+      main:
+        - identifier: blog
+          name: Blog
+          title: Blog posts
+          url: /blogs
+          weight: 1
+        - identifier: gallery
+          name: Gallery
+          title: Image gallery
+          url: /gallery
+          weight: 2
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+enableRobotsTXT: true
+
+pagination:
+  pagerSize: 3
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+params:
+  title: "Matthew Portfolio"
+  description: "Business Systems Analyst & Automation Portfolio"
+  favicon: "/fav.png"
+    
+  color:
+    textColor: "#f5f5f5"
+    secondaryTextColor: "#b3b3b3"
+    textLinkColor: "#ffd700"
+    backgroundColor: "#0d0d0d"
+    secondaryBackgroundColor: "#1a1a1a"
+    primaryColor: "#d4af37"
+
+  animate: true
+  
+  Theme:
+    defaultTheme: "dark"
+    disableThemeToggle: true
+
+  navbar:
+    brandName: "Matthew's Profile"
+    stickyNavBar:
+      enable: true
+      showOnScrollUp: false
+    menus:
+      disableAbout: false
+      disableExperience: false
+      disableEducation: false
+      disableProjects: false
+      disableAchievements: false   # keep for rubric
+      disableContact: false
+
+  customCSS:
+  - css/custom.css
+  # ✅ HERO (personal branding)
+  hero:
+    enable: true
+    intro: "Greetings, Tarnished..."
+    title: "Matthew Doucette-Frazee"
+    subtitle: "Seeker of Efficiency and Architect of Automation"
+    content: "I specialize in automation, data analysis, and process improvement—helping organizations reduce inefficiencies, improve data accuracy, and drive measurable business results."
+    image: "images/matt.png"
+    button:
+      enable: true
+      name: "Download Resume"
+      url: "/files/Matthew_Resume.pdf"
+      download: true
+    socialLinks:
+      fontAwesomeIcons:
+        - icon: fab fa-github
+          url: https://github.com/mattdou7
+        - icon: fab fa-linkedin
+          url: https://www.linkedin.com/in/mattdou7
+        - icon: fab fa-twitter
+          url: https://twitter.com/
+
+  # ✅ ABOUT
+  about:
+    enable: true
+    title: "About Me"
+    image: "/images/matt.png"
+    content: |-
+      I am a bilingual Business Systems Analyst with experience in automation, data analysis, and process improvement within supply chain and operations environments.
+
+      I focus on improving data quality, streamlining workflows, and delivering measurable outcomes through automation and system improvements. I am currently completing a Data Analytics & AI Automation program while gaining hands-on experience building real-world solutions.
+    skills:
+      enable: true
+      title: "Technical Skills"
+      items:
+        - "Power Apps Automation"
+        - "Microsoft Excel (Advanced)"
+        - "SQL (Querying & Validation)"
+        - "EDI & API Integration"
+        - "ERP Systems"
+        - "Process Documentation (SOPs)"
+        - "Data Analysis"
+        - "Workflow Optimization"
+
+  # ✅ EXPERIENCE
+  experience:
+    enable: true
+    items:
+      - company: "Universal Properties Limited"
+        jobs:
+          - name: "Fleet Coordinator"
+            date: "2025 – Present"
+            content: |
+              - Developed a Power Apps system to automate fleet tracking and reporting
+              - Enabled real-time visibility across 300+ vehicles
+              - Reduced manual administrative workload
+              - Identified and corrected rebate tracking issue, recovering ~$250,000 annually
+              - Standardized procedures to improve accuracy and efficiency
+
+      - company: "Midland Transport"
+        jobs:
+          - name: "Business Systems Analyst"
+            date: "2023 – 2025"
+            content: |
+              - Diagnosed EDI system issues using transaction-level data
+              - Reduced data errors by 40%
+              - Improved onboarding timelines by 2 days
+              - Supported API integrations and cloud-based systems
+              - Created templates and documentation to reduce setup errors
+
+  # ✅ EDUCATION
+  education:
+    enable: true
+    items:
+      - title: "Data Analytics & AI Automation (In Progress)"
+        school:
+          name: "Eastern College"
+        date: "2025 – Present"
+
+      - title: "Bachelor of Business Administration"
+        school:
+          name: "University of New Brunswick"
+
+  # ✅ PROJECTS (required portfolio content)
+  projects:
+    enable: true
+    items:
+      - title: "Fleet Automation System"
+        content: |
+          Built a Power Apps solution to automate fleet operations:
+
+          - Centralized tracking for 300+ vehicles
+          - Automated scheduling and reporting
+          - Reduced manual data entry
+          - Improved operational decision-making
+        image: "/images/projects/profile.png"
+        badges:
+          - "Power Apps"
+          - "Automation"
+          - "Data Analytics"
+
+      - title: "Process Improvement Initiative"
+        content: |
+          Identified and fixed rebate tracking errors:
+
+          - Recovered approximately $250,000 annually
+          - Improved financial tracking accuracy
+          - Created standardized process documentation
+        image: "/images/projects/converter.jpg"
+        badges:
+          - "Process Improvement"
+          - "Data Analysis"
+
+  # ✅ ACHIEVEMENTS (kept for grading)
+  achievements:
+    enable: true
+    items:
+      - title: "Automation Impact"
+        content: "Successfully automated fleet system handling 300+ vehicles."
+
+      - title: "Cost Recovery"
+        content: "Recovered approximately $250,000 annually through process improvements."
+
+      - title: "Data Quality Improvement"
+        content: "Reduced system data errors by 40%."
+
+  # ✅ CONTACT (CTA requirement)
+  contact:
+    enable: true
+    content: "Feel free to reach out if you'd like to connect or discuss opportunities."
+    btnName: "Email Me"
+    btnLink: "mailto:mattdou7@gmail.com"
+
+  # ✅ FOOTER LINKS (extra resource links)
+  footer:
+    socialNetworks:
+      github: https://github.com/mattdou7
+      linkedin: https://linkedin.com/in/mattdou7
+      twitter: https://twitter.com
+
+  # ✅ Blog + page behavior
+  listPages:
+    disableFeaturedImage: false
+
+  singlePages:
+    socialShare: true
+    readTime:
+      enable: true
+      content: "min read"
+
+  terms:
+    read: "Read"
+    toc: "Table Of Contents"
+
+  datesFormat:
+    article: "Jan 2, 2006"
