@@ -1,8 +1,11 @@
-baseURL: "https://mattdou7.github.io"
+baseURL: "https://mattdou7.github.io/"
 languageCode: "en-us"
 title: "Matthew Doucette-Frazee Portfolio"
-theme: hugo-profile
-canonifyURLs: true
+theme: "hugo-profile"
+
+# ✅ Fix URL behavior for GitHub Pages
+canonifyURLs: false
+relativeURLs: true
 
 defaultContentLanguage: "en"
 
@@ -16,12 +19,12 @@ languages:
         - identifier: blog
           name: Blog
           title: Blog posts
-          url: /blogs
+          url: blogs
           weight: 1
         - identifier: gallery
           name: Gallery
           title: Image gallery
-          url: /gallery
+          url: gallery
           weight: 2
 
 outputs:
@@ -43,8 +46,8 @@ markup:
 params:
   title: "Matthew Portfolio"
   description: "Business Systems Analyst & Automation Portfolio"
-  favicon: "/fav.png"
-    
+  favicon: "fav.png"
+
   color:
     textColor: "#f5f5f5"
     secondaryTextColor: "#b3b3b3"
@@ -54,7 +57,7 @@ params:
     primaryColor: "#d4af37"
 
   animate: true
-  
+
   Theme:
     defaultTheme: "dark"
     disableThemeToggle: true
@@ -69,12 +72,13 @@ params:
       disableExperience: false
       disableEducation: false
       disableProjects: false
-      disableAchievements: false   # keep for rubric
+      disableAchievements: false
       disableContact: false
 
   customCSS:
-  - css/custom.css
-  # ✅ HERO (personal branding)
+    - css/custom.css
+
+  # ✅ HERO
   hero:
     enable: true
     intro: "Greetings, Tarnished..."
@@ -85,7 +89,7 @@ params:
     button:
       enable: true
       name: "Download Resume"
-      url: "/files/Matthew_Resume.pdf"
+      url: "files/Matthew_Resume.pdf"
       download: true
     socialLinks:
       fontAwesomeIcons:
@@ -100,7 +104,7 @@ params:
   about:
     enable: true
     title: "About Me"
-    image: "/images/matt.png"
+    image: "images/matt.png"
     content: |-
       I am a bilingual Business Systems Analyst with experience in automation, data analysis, and process improvement within supply chain and operations environments.
 
@@ -157,7 +161,7 @@ params:
         school:
           name: "University of New Brunswick"
 
-  # ✅ PROJECTS (required portfolio content)
+  # ✅ PROJECTS
   projects:
     enable: true
     items:
@@ -169,7 +173,7 @@ params:
           - Automated scheduling and reporting
           - Reduced manual data entry
           - Improved operational decision-making
-        image: "/images/projects/profile.png"
+        image: "images/projects/profile.png"
         badges:
           - "Power Apps"
           - "Automation"
@@ -182,12 +186,12 @@ params:
           - Recovered approximately $250,000 annually
           - Improved financial tracking accuracy
           - Created standardized process documentation
-        image: "/images/projects/converter.jpg"
+        image: "images/projects/converter.jpg"
         badges:
           - "Process Improvement"
           - "Data Analysis"
 
-  # ✅ ACHIEVEMENTS (kept for grading)
+  # ✅ ACHIEVEMENTS
   achievements:
     enable: true
     items:
@@ -200,21 +204,21 @@ params:
       - title: "Data Quality Improvement"
         content: "Reduced system data errors by 40%."
 
-  # ✅ CONTACT (CTA requirement)
+  # ✅ CONTACT
   contact:
     enable: true
     content: "Feel free to reach out if you'd like to connect or discuss opportunities."
     btnName: "Email Me"
     btnLink: "mailto:mattdou7@gmail.com"
 
-  # ✅ FOOTER LINKS (extra resource links)
+  # ✅ FOOTER
   footer:
     socialNetworks:
       github: https://github.com/mattdou7
       linkedin: https://linkedin.com/in/mattdou7
       twitter: https://twitter.com
 
-  # ✅ Blog + page behavior
+  # ✅ BLOG SETTINGS
   listPages:
     disableFeaturedImage: false
 
@@ -230,3 +234,4 @@ params:
 
   datesFormat:
     article: "Jan 2, 2006"
+``
