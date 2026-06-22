@@ -83,23 +83,6 @@ html, body {
 
 
 
-
-<script>
-document.addEventListener("click", function () {
-  const intro = document.getElementById("intro-screen");
-
-  if (intro) {
-    intro.style.opacity = "0";
-    setTimeout(() => intro.remove(), 800);
-  }
-}, { once: true });
-</script>
-
-<div id="intro-screen">
-  <h1 class="glow">PRESS ANY KEY</h1>
-</div>
-
-
 <script>
 window.addEventListener("scroll", () => {
   document.querySelectorAll(".reveal").forEach(el => {
