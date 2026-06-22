@@ -1,9 +1,14 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-    const isHomePage = window.location.pathname.replace(/\/$/, "") === "";
+    const path = window.location.pathname.toLowerCase();
 
+    const isHomePage =
+        path === "/" ||
+        path === "/index.html" ||
+        path === "";
+
+    // ✅ Always show normal site on other pages
     if (!isHomePage) {
-        // ✅ Ensure non-home pages always visible
         document.body.classList.remove("preload");
         document.body.classList.add("loaded");
         return;
@@ -23,7 +28,6 @@ document.addEventListener("DOMContentLoaded", function () {
         setTimeout(() => {
             intro.remove();
 
-            // ✅ reveal site
             document.body.classList.remove("preload");
             document.body.classList.add("loaded");
 
@@ -45,8 +49,8 @@ document.addEventListener("DOMContentLoaded", function () {
     } else {
         intro.remove();
 
-        // ✅ reveal immediately
         document.body.classList.remove("preload");
         document.body.classList.add("loaded");
     }
 });
+``
