@@ -4,15 +4,14 @@ document.addEventListener("DOMContentLoaded", function () {
         window.location.pathname === "/" ||
         window.location.pathname === "/index.html";
 
-    if (!isHomePage) return;
+    if (!isHomePage) return; // ✅ STOP on other pages
 
     const hasPlayedIntro = localStorage.getItem("introPlayed");
 
+    // ✅ Create intro dynamically
     const intro = document.createElement("div");
     intro.id = "intro-screen";
-
-    intro.innerHTML = `<h1 class="glow">PRESS ANY KEY</h1>`;
-
+    intro.innerHTML = "<h1 class='glow'>PRESS ANY KEY</h1>";
     document.body.appendChild(intro);
 
     if (!hasPlayedIntro) {
@@ -20,30 +19,20 @@ document.addEventListener("DOMContentLoaded", function () {
         intro.style.display = "flex";
 
         function enterSite() {
-            // prevent double trigger
-            if (intro.classList.contains("done")) return;
-            intro.classList.add("done");
-
             intro.style.opacity = "0";
 
             setTimeout(() => {
                 intro.remove();
-            }, 800);
+            }, 500);
         }
 
-        // ✅ Attach directly to intro (IMPORTANT)
-        intro.addEventListener("click", enterSite);
-        intro.addEventListener("mousedown", enterSite);
-
-        // ✅ Keyboard anywhere
-        document.addEventListener("keydown", enterSite);
-
-        // ✅ Fail-safe auto skip (prevents being stuck)
-        setTimeout(enterSite, 5000);
+        document.addEventListener("keydown", enterSite, { once: true });
+        document.addEventListener("click", enterSite, { once: true });
 
         localStorage.setItem("introPlayed", "true");
 
     } else {
+        // already seen → just remove immediately
         intro.remove();
     }
 });
