@@ -1,24 +1,23 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-    const path = window.location.pathname.toLowerCase();
+    console.log("INTRO SCRIPT RUNNING");
+
+    const path = window.location.pathname;
 
     const isHomePage =
         path === "/" ||
-        path === "/index.html" ||
-        path === "";
+        path.endsWith("index.html");
 
-    // ✅ Always show normal site on other pages
+    // ✅ show normal site on non-home pages
     if (!isHomePage) {
         document.body.classList.remove("preload");
         document.body.classList.add("loaded");
         return;
     }
 
-    const hasPlayedIntro = localStorage.getItem("introPlayed");
-
     const intro = document.createElement("div");
     intro.id = "intro-screen";
-    intro.innerHTML = "<h1 class='glow'>PRESS ANY KEY</h1>";
+    intro.innerHTML = "<h1>PRESS ANY KEY</h1>";
 
     document.body.appendChild(intro);
 
@@ -27,30 +26,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
         setTimeout(() => {
             intro.remove();
-
             document.body.classList.remove("preload");
             document.body.classList.add("loaded");
-
         }, 800);
     }
 
-    if (!hasPlayedIntro) {
+    intro.style.display = "flex";
 
-        intro.style.display = "flex";
+    window.addEventListener("click", enterSite);
+    window.addEventListener("keydown", enterSite);
 
-        window.addEventListener("click", enterSite);
-        window.addEventListener("keydown", enterSite);
-        window.addEventListener("touchstart", enterSite);
-
-        setTimeout(enterSite, 5000);
-
-        localStorage.setItem("introPlayed", "true");
-
-    } else {
-        intro.remove();
-
-        document.body.classList.remove("preload");
-        document.body.classList.add("loaded");
-    }
 });
-``
