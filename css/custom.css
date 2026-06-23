@@ -302,4 +302,19 @@ body::after {
 }
 cursor: pointer;
 pointer-events: all;
+.project-list {
+  padding-left: 18px;
+  margin-top: 10px;
+  color: #ddd;
+  font-size: 0.95rem;
+}
+
+.project-list li {
+  margin-bottom: 6px;
+  line-height: 1.5;
+}
+
+.project-list li::marker {
+  color: #d4af37;
+}
 ``
