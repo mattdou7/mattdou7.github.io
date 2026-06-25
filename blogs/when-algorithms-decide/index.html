@@ -1,35 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>When Algorithms Decide: The Hidden Bias Shaping Our Future</title>
+
 <link rel="icon" href="/fav.png">
-
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet">
-
-<link rel="stylesheet" href="/css/font.css">
-
 <link rel="stylesheet" href="/bootstrap-5/css/bootstrap.min.css">
-<link rel="stylesheet" href="/css/header.css">
-<link rel="stylesheet" href="/css/footer.css">
 <link rel="stylesheet" href="/css/theme.css">
 <link rel="stylesheet" href="/css/custom.css">
-
-<link rel="stylesheet" href="/css/single.css">
-
-<script defer src="/fontawesome-6/all-6.4.2.js"></script>
-
-<title>
-When Algorithms Decide: The Hidden Bias Shaping Our Future
-</title>
 
 <style>
 body {
   background-color: #0d0d0d;
-  color: white;
+  color: #f5f5f5;
+}
+h1, h2 {
+  margin-top: 30px;
 }
 </style>
 
@@ -37,81 +25,173 @@ body {
 
 <body>
 
-<header>
-  <nav class="navbar navbar-expand-lg bg-dark">
-    <div class="container">
-      Matthew's Profile
-      </a>
-    </div>
-  </nav>
-</header>
+<div class="container mt-5">
+<div class="row">
 
-<section class="container mt-5">
+<!-- MAIN CONTENT -->
+<div class="col-lg-9">
 
-  <h1 class="text-center mb-4">
-    When Algorithms Decide: The Hidden Bias Shaping Our Future
-  </h1>
+<h1 class="text-center">When Algorithms Decide: The Hidden Bias Shaping Our Future</h1>
 
-  <p class="text-center">June 25, 2026</p>
+<p class="text-center">June 25, 2026 • <span id="readingTime"></span></p>
 
-  <div style="text-align:center; margin-bottom:25px;">
-    <img src="/images/AI-Ethics.jpg"
-         style="max-width:700px; border-radius:10px;">
-  </div>
+<div style="text-align:center; margin-bottom:25px;">
+<img src="/images/AI-Ethics.jpg" style="width:100%; border-radius:10px;">
+</div>
 
-  <p>
-    Artificial intelligence (AI) is rapidly transforming how decisions are made in modern society.
-    From hiring to healthcare to criminal justice, algorithms influence outcomes that affect millions of people.
-    While AI offers efficiency and scale, it also raises ethical concerns such as bias, fairness, transparency,
-    and accountability.
-  </p>
+<div class="page-content">
 
-  <h2>Ethical Frameworks for AI</h2>
-  <ul>
-    <li>Beneficence – promote well-being</li>
-    <li>Nonmaleficence – avoid harm</li>
-    <li>Autonomy – maintain human control</li>
-    <li>Justice – ensure fairness</li>
-    <li>Explicability – ensure transparency</li>
-  </ul>
+<h2 id="intro">Introduction</h2>
+<p>
+Artificial intelligence (AI) is rapidly transforming how decisions are made in modern society. Systems powered by algorithms now influence hiring decisions, financial approvals, healthcare diagnoses, and even criminal justice outcomes. While AI offers increased efficiency, speed, and scalability, it also introduces serious ethical concerns. Among the most pressing issues are bias, fairness, transparency, accountability, and governance. These concerns highlight the importance of understanding not only how AI works, but also how it should be designed and deployed responsibly. This blog post explores the ethical challenges of AI, focusing especially on bias and fairness, while incorporating concepts such as ethical frameworks, soft ethics, governance, and real-world examples.
+</p>
 
-  <h2>How Bias Emerges</h2>
-  <p>
-    AI systems learn from historical data. If the data reflects inequality,
-    the system can reproduce and amplify those patterns.
-  </p>
+<h2 id="frameworks">Ethical Frameworks for AI</h2>
+<p>
+Ethical evaluation of AI systems often relies on five widely recognized principles: beneficence, nonmaleficence, autonomy, justice, and explicability. Beneficence requires that AI systems promote well-being and contribute positively to society. Nonmaleficence emphasizes that systems must avoid causing harm, whether physical, financial, or psychological. Autonomy ensures that humans retain control over important decisions and are not entirely replaced by machines. Justice demands fairness and the elimination of bias or discrimination. Finally, explicability highlights the importance of transparency and accountability, ensuring that decisions can be understood and explained.
+</p>
 
-  <h2>Black Box Problem</h2>
-  <p>
-    Many AI systems lack transparency, making it difficult to understand decisions.
-    This reduces accountability and trust.
-  </p>
+<p>
+These principles work together to provide a comprehensive approach to ethical AI. However, applying them in practice can be challenging, especially when systems rely on large datasets and complex machine learning models.
+</p>
 
-  <h2>Real-World Example</h2>
-  <ul>
-    <li>Higher error rates in facial recognition for certain groups</li>
-    <li>Potential discrimination in real-world use</li>
-  </ul>
+<h2 id="bias">How Bias Emerges in AI Systems</h2>
+<p>
+Bias in AI systems often originates from the data used to train them. Historical data reflects past human decisions, which may include discrimination or inequality. When AI models are trained on such data, they may reproduce or even amplify these patterns. This is known as algorithmic bias. Another issue is inconclusive evidence, where systems rely on correlations rather than causation, leading to potentially unjustified decisions.
+</p>
 
-  <h2>Governance and Ethics</h2>
-  <p>
-    Ethical Impact Assessments (EIA) and strong governance frameworks help reduce risk.
-    Organizations must take responsibility for fairness and accountability.
-  </p>
+<p>
+For example, an AI hiring system trained on past employee data may prefer candidates who resemble previously successful employees. If historical hiring favored one demographic group, the AI may continue that pattern, even if it is unfair.
+</p>
 
-  <h2>Conclusion</h2>
-  <p>
-    AI must be guided by ethical principles to ensure it benefits society.
-    Without proper oversight, it can reinforce inequality and cause harm.
-  </p>
+<p>
+Another well-known example occurred with Amazon’s AI recruiting tool. The system was trained on historical hiring data, which predominantly reflected male candidates in technical roles. As a result, the algorithm began penalizing resumes that contained indicators of female identity. Although the system was not intentionally designed to discriminate, it learned and reinforced gender bias from past data. Amazon eventually abandoned the tool, demonstrating how easily bias can emerge in AI systems.
+</p>
 
-</section>
+<h2 id="blackbox">Black Box Problem and Transparency</h2>
+<p>
+Many modern AI models function as black boxes, meaning their internal decision-making processes are difficult to interpret. This creates the issue of inscrutable evidence, where decisions cannot be easily explained. Lack of transparency reduces trust and makes it difficult to assign responsibility when things go wrong.
+</p>
 
-<footer class="text-center mt-5 p-4">
-  <p>© 2026 Matthew Doucettefrazee</p>
-</footer>
+<p>
+Explainable AI (XAI) has emerged as a solution to this problem. By providing insights into how models arrive at decisions, XAI improves accountability and helps users understand and challenge outcomes. Transparency is essential for maintaining ethical standards and ensuring individuals are treated fairly.
+</p>
 
-<script src="/bootstrap-5/js/bootstrap.bundle.min.js"></script>
+<p>
+A real-world example of this issue can be seen in credit scoring systems, where financial institutions use AI to determine loan eligibility. In many cases, applicants are denied loans without receiving a clear explanation. This lack of transparency prevents individuals from understanding or challenging decisions that may significantly impact their financial opportunities.
+</p>
+
+<h2 id="example">Real-World Example: Facial Recognition Bias</h2>
+<p>
+A widely discussed real-world example of AI bias is facial recognition technology. Studies have shown that some facial recognition systems have significantly higher error rates for individuals with darker skin tones and for women. These inaccuracies can lead to wrongful identification and serious consequences, especially when used in law enforcement.
+</p>
+
+<p>
+In 2020, facial recognition systems contributed to a wrongful arrest after incorrectly matching an individual to surveillance footage. This case highlights the risks of using biased AI systems in critical environments and demonstrates how errors can result in real-world harm.
+</p>
+
+<p>
+This example highlights multiple ethical concerns, including unfair outcomes, discrimination, and violations of justice and nonmaleficence. It demonstrates how AI systems, if not carefully designed and tested, can reinforce existing inequalities.
+</p>
+
+<h2 id="governance">AI Governance and Ethical Impact Assessment</h2>
+<p>
+AI governance refers to the structures, policies, and processes used to ensure that AI systems are developed and deployed responsibly. This includes regulations, standards, and internal company policies. One important tool is Ethical Impact Assessment (EIA), which is used to evaluate potential risks and societal impacts before implementing an AI system.
+</p>
+
+<p>
+EIA helps identify issues such as bias, privacy concerns, and unintended consequences. By addressing these challenges early, organizations can reduce harm and improve trust in their systems. Governance also includes accountability frameworks, which clarify who is responsible for AI decisions and outcomes.
+</p>
+
+<p>
+Governments are beginning to take stronger action. For example, the European Union introduced the AI Act, which regulates high-risk AI systems such as biometric identification and critical decision-making tools. This demonstrates increasing global recognition of the need for AI oversight.
+</p>
+
+<h2 id="soft">Soft Ethics and Its Importance</h2>
+<p>
+Soft ethics plays a crucial role in AI because formal regulations often lag behind technological advancements. Soft ethics includes voluntary guidelines, best practices, and self-regulation. Organizations can implement internal ethics boards, conduct audits, and develop transparent policies to ensure responsible AI use.
+</p>
+
+<p>
+The advantage of soft ethics is flexibility. Companies can quickly respond to new challenges and adapt their practices as technology evolves. Soft ethics also promotes a culture of responsibility, encouraging developers and organizations to consider the broader societal impact of their work.
+</p>
+
+<h2 id="unethical">Unethical Practices in AI Development</h2>
+<p>
+Despite the availability of ethical guidelines, some organizations engage in harmful practices. Ethics washing (or blue washing) involves promoting an image of ethical responsibility without making meaningful changes. Ethics shopping refers to selectively adopting principles that benefit the organization. Ethics dumping occurs when companies deploy harmful technologies in regions with weaker regulations. Ethics shirking involves avoiding responsibility for the negative consequences of AI systems.
+</p>
+
+<p>
+These practices undermine trust and highlight the need for stronger governance and accountability mechanisms.
+</p>
+
+<h2 id="solutions">Solutions for Ethical AI</h2>
+<p>
+Several strategies can help address ethical challenges in AI. Bias mitigation involves using diverse and representative datasets, conducting regular audits, and applying fairness-aware techniques. Transparency can be improved through explainable AI and clear communication with users. Accountability requires defining roles and responsibilities across the AI lifecycle, from development to deployment.
+</p>
+
+<p>
+Human oversight is also essential, particularly in high-risk decisions such as healthcare or criminal justice. By combining these approaches, organizations can create AI systems that are both effective and ethical.
+</p>
+
+<h2 id="social">AI for Social Good</h2>
+<p>
+When designed responsibly, AI has the potential to create significant positive impact. AI for Social Good emphasizes fairness, transparency, and human-centered design. Applications include improving healthcare outcomes, detecting fraud, supporting environmental sustainability, and enhancing public services.
+</p>
+
+<p>
+For example, AI is being used in medical imaging to detect diseases such as cancer earlier and more accurately, improving patient treatment outcomes. It is also used to analyze climate data and predict natural disasters, allowing governments to respond more effectively and potentially save lives.
+</p>
+
+<p>
+To achieve these benefits, organizations must follow ethical principles and ensure that systems are deployed in ways that respect human rights and promote social welfare.
+</p>
+
+<h2 id="conclusion">Conclusion</h2>
+<p>
+AI is reshaping society, offering both opportunities and challenges. Bias, lack of transparency, and weak accountability highlight the importance of ethical considerations in AI development. By applying ethical frameworks, strengthening governance, and embracing soft ethics, we can create systems that are fair, transparent, and beneficial to society.
+</p>
+
+<p>
+Ultimately, the goal is not just to build advanced technology, but to ensure that it aligns with human values and contributes to a just and equitable future.
+</p>
+
+</div>
+</div>
+
+<!-- SIDEBAR -->
+<div class="col-lg-3">
+<h5>Table of Contents</h5>
+<ul>
+<li><a href="#intro">Introduction</a></li>
+<li><a href="#frameworks">Frameworks</a></li>
+<li><a href="#bias">Bias</a></li>
+<li><a href="#blackbox">Black Box</a></li>
+<li><a href="#example">Example</a></li>
+<li><a href="#governance">Governance</a></li>
+<li><a href="#soft">Soft Ethics</a></li>
+<li><a href="#unethical">Unethical</a></li>
+<li><a href="#solutions">Solutions</a></li>
+<li><a href="#social">Social Good</a></li>
+<li><a href="#conclusion">Conclusion</a></li>
+</ul>
+
+<h5>Tags</h5>
+<ul class="list-inline">
+<li class="list-inline-item">AI</li>
+<li class="list-inline-item">Ethics</li>
+<li class="list-inline-item">Bias</li>
+</ul>
+</div>
+
+</div>
+</div>
+
+<script>
+const text = document.querySelector(".page-content").innerText;
+const words = text.split(" ").length;
+document.getElementById("readingTime").innerText = Math.ceil(words / 200) + " min read";
+</script>
 
 </body>
 </html>
