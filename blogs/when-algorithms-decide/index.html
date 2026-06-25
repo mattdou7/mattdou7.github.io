@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -18,22 +17,46 @@
 <link rel="stylesheet" href="/css/single.css">
 
 <style>
+:root {
+  --background-color: #0d0d0d;
+}
 html, body {
-  background-color: #0d0d0d;
+  background-color: var(--background-color);
 }
 </style>
 
 </head>
 
-<body>
+<body class="dark">
 
+<!-- ✅ HEADER (MATCHES WORKING BLOG) -->
 <header id="profileHeader">
-<nav class="navbar navbar-expand-lg">
-<div class="container-fluid mx-5">
-<a class="navbar-brand" href="/">
-<img src="/fav.png" width="30"> Matthew's Profile
-</a>
-</div>
+<nav class="pt-3 navbar navbar-expand-lg animate">
+  <div class="container-fluid mx-xs-2 mx-sm-5 mx-md-5 mx-lg-5">
+
+    <a class="navbar-brand primary-font" href="/">
+      <img src="/fav.png" width="30"> Matthew's Profile
+    </a>
+
+    <div>
+      <input class="form-control d-none d-md-block" placeholder="Search...">
+    </div>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse primary-font" id="navbarContent">
+      <ul class="navbar-nav ms-auto text-center">
+        <li class="nav-item"><a class="nav-link" href="/#about">About Me</a></li>
+        <li class="nav-item"><a class="nav-link" href="/#experience">Experience</a></li>
+        <li class="nav-item"><a class="nav-link" href="/#education">Education</a></li>
+        <li class="nav-item"><a class="nav-link" href="/#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="/blogs/">Blog</a></li>
+      </ul>
+    </div>
+
+  </div>
 </nav>
 </header>
 
@@ -43,6 +66,7 @@ html, body {
 
 <!-- MAIN -->
 <div class="col-sm-12 col-md-12 col-lg-9">
+<div class="pr-lg-4">
 
 <div class="title mb-5">
 <h1 class="text-center mb-4">
@@ -59,8 +83,6 @@ June 25, 2026 | <span id="readingTime"></span>
 <div style="text-align:center; margin-bottom:25px;">
 <img src="/images/AI-Ethics.jpg" style="max-width:700px; border-radius:10px;">
 </div>
-
-
 
 <h2 id="intro">Introduction</h2>
 <p>
@@ -179,17 +201,19 @@ Ultimately, the goal is not just to build advanced technology, but to ensure tha
 
 </article>
 </div>
+</div>
 
-<!-- SIDEBAR (styled like Code 2) -->
+<!-- SIDEBAR -->
 <div class="col-lg-3">
 <div id="stickySideBar" class="sticky-sidebar">
 
 <aside class="toc">
 <h5>Table Of Contents</h5>
-<nav>
+<div class="toc-content">
+<nav id="TableOfContents">
 <ul>
 <li><a href="#intro">Introduction</a></li>
-<li><a href="#frameworks">Frameworks</a></li>
+<li><a href="#frameworks">Ethical Frameworks</a></li>
 <li><a href="#bias">Bias</a></li>
 <li><a href="#blackbox">Black Box</a></li>
 <li><a href="#example">Example</a></li>
@@ -201,6 +225,7 @@ Ultimately, the goal is not just to build advanced technology, but to ensure tha
 <li><a href="#conclusion">Conclusion</a></li>
 </ul>
 </nav>
+</div>
 </aside>
 
 <aside class="tags">
@@ -222,7 +247,7 @@ Ultimately, the goal is not just to build advanced technology, but to ensure tha
 <script>
 const text = document.querySelector(".page-content").innerText;
 const words = text.split(" ").length;
-document.getElementById("readingTime").innerText = Math.ceil(words / 200) + " min read";
+document.getElementById("readingTime").innerText = Math.ceil(words/200) + " min read";
 </script>
 
 </body>
