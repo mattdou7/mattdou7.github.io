@@ -9,152 +9,172 @@ date: 2026-06-25
 **Course:** DA1A (Ethics and Communication for Data Science and AI)  
 **Assignment:** Assignment 3  
 
+---
+
 ## Introduction
-When Algorithms Decide: The Hidden Bias Shaping Our Future
-Name: Matt Doucettefrazee
-Course: DA1A (Ethics and Communication for Data Science and AI)
-Assignment: Assignment 3
-Blog URL: _______________________________
-________________________________________
-Introduction
+
 Artificial intelligence (AI) is rapidly transforming how decisions are made in modern society. Today, algorithms play a critical role in hiring decisions, financial approvals, healthcare diagnoses, and even criminal justice systems. These technologies promise efficiency, consistency, and scalability—but they also raise serious ethical concerns.
+
 At the center of these concerns are issues such as:
-•	Bias and discrimination
-•	Lack of transparency
-•	Weak accountability
-•	Privacy risks
-•	Governance challenges
-While AI can improve decision-making, it can also replicate and amplify existing inequalities if not designed carefully. This blog explores the ethical challenges of AI, with a specific focus on bias and fairness, while also examining ethical frameworks, governance, soft ethics, and real-world consequences.
-________________________________________
-Ethical Frameworks for AI
+
+- Bias and discrimination  
+- Lack of transparency  
+- Weak accountability  
+- Privacy risks  
+- Governance challenges  
+
+While AI can improve decision-making, it can also replicate and amplify existing inequalities if not designed carefully.
+
+---
+
+## Ethical Frameworks for AI
+
 To understand whether AI systems are ethical, we rely on five core principles:
-•	Beneficence – AI should promote well-being and benefit society
-•	Nonmaleficence – AI should avoid causing harm
-•	Autonomy – Humans must retain control over decisions
-•	Justice – AI should ensure fairness and avoid discrimination
-•	Explicability – AI decisions must be transparent and accountable
-These principles help guide developers and organizations in building responsible systems. However, applying these values is not always straightforward. Many AI models are complex and operate at a scale where ethical issues are difficult to detect until harm has already occurred.
-________________________________________
-How Bias Emerges in AI Systems
-One of the most significant ethical risks in AI is algorithmic bias.
-AI systems learn from data—but that data is often shaped by historical human decisions. If those decisions reflect discrimination or inequality, the AI system may inherit and reinforce those patterns.
-Key causes of bias include:
-•	Biased or incomplete training data
-•	Social inequalities embedded in historical records
-•	Over-reliance on correlations rather than causation
-This leads to what is known as inconclusive evidence, where algorithms make decisions based on patterns that are not logically justified.
-Example:
-A hiring algorithm trained on past employee data may favor candidates who resemble previous hires. If those hires were mostly from one demographic group, the system will continue that bias—even if it is unfair.
-________________________________________
-The Black Box Problem and Transparency
-Many modern AI systems are considered “black boxes”, meaning their decision-making process is difficult to understand.
-This creates the issue of inscrutable evidence, where:
-•	Decisions are unclear
-•	Users cannot challenge outcomes
-•	Accountability becomes difficult
-Why this matters:
-•	People affected by AI decisions may feel powerless
-•	Organizations cannot fully explain or justify outcomes
-•	Trust in AI systems decreases
-To address this, Explainable AI (XAI) has emerged as a solution. XAI helps make AI systems more transparent by showing how decisions are made.
-________________________________________
-Real-World Example: Facial Recognition Bias
-A widely discussed example of bias in AI is facial recognition technology.
-Studies have shown that many systems:
-•	Have higher error rates for people with darker skin tones
-•	Perform worse for women compared to men
-Ethical issues in this case:
-•	Unfair outcomes → certain groups are disproportionately affected
-•	Discrimination → reinforces systemic inequality
-•	Violation of justice → unequal treatment under the system
-In high-stakes situations like law enforcement, these errors can lead to wrongful identification and serious consequences. This example clearly demonstrates how AI, if poorly designed, can cause real harm.
-________________________________________
-AI Governance and Ethical Impact Assessment
-To manage these risks, we need strong AI governance.
+
+- **Beneficence** – AI should promote well-being  
+- **Nonmaleficence** – AI should avoid harm  
+- **Autonomy** – Humans must retain control  
+- **Justice** – AI should ensure fairness  
+- **Explicability** – AI must be transparent and accountable  
+
+These principles guide responsible AI development, but applying them in complex systems remains challenging.
+
+---
+
+## How Bias Emerges in AI Systems
+
+One of the most significant ethical risks is **algorithmic bias**.
+
+AI systems learn from data, but that data often reflects past inequalities. As a result, systems can reproduce or amplify those patterns.
+
+### Causes of bias:
+- Biased or incomplete datasets  
+- Historical inequalities  
+- Correlation without causation  
+
+### Example:
+A hiring algorithm trained on past hiring data may favor certain groups if previous hiring practices were biased.
+
+---
+
+## The Black Box Problem and Transparency
+
+Many AI systems operate as **“black boxes”**, meaning their decisions are difficult to interpret.
+
+This creates:
+
+- Lack of transparency  
+- Weak accountability  
+- Reduced trust  
+
+**Explainable AI (XAI)** helps solve this by making decisions clearer and easier to understand.
+
+---
+
+## Real-World Example: Facial Recognition Bias
+
+Facial recognition systems often show bias:
+
+- Higher error rates for people with darker skin  
+- Lower accuracy for women  
+
+### Ethical concerns:
+- Unfair outcomes  
+- Discrimination  
+- Violation of justice  
+
+In law enforcement, these errors can lead to serious consequences such as wrongful identification.
+
+---
+
+## AI Governance and Ethical Impact Assessment
+
 AI governance includes:
-•	Laws and regulations
-•	Industry standards
-•	Organizational policies
-•	Accountability frameworks
-One important tool is Ethical Impact Assessment (EIA).
-EIA helps:
-•	Identify ethical risks before deployment
-•	Evaluate fairness, privacy, and social impact
-•	Prevent harmful outcomes early
-For example, before deploying an AI hiring tool, a company should evaluate:
-•	Whether the system is biased
-•	How decisions are explained
-•	Who is accountable for errors
-________________________________________
-The Role of Soft Ethics
-While laws (hard ethics) are important, they are often slow to adapt. This is where soft ethics becomes essential.
-Soft ethics involves:
-•	Voluntary guidelines
-•	Self-regulation
-•	Ethical company culture
-Advantages of soft ethics:
-•	Faster response to new risks
-•	Encourages innovation with responsibility
-•	Builds public trust
-For example, companies can:
-•	Conduct bias audits regularly
-•	Use explainable AI tools
-•	Create internal ethics committees
-In my view, soft ethics is especially important because it allows organizations to act before harm occurs, rather than waiting for legal consequences.
-________________________________________
-Unethical Practices in AI Development
-Unfortunately, not all organizations follow ethical guidelines. Some engage in practices that appear ethical on the surface but are harmful in reality.
-Common unethical behaviors include:
-•	Ethics washing (blue washing)
-Claiming to be ethical without real action
-•	Ethics shopping
-Picking only the ethical rules that benefit the company
-•	Ethics dumping
-Testing harmful technologies in countries with weaker regulations
-•	Ethics shirking
-Avoiding responsibility for AI harms
-These practices undermine trust and demonstrate why stronger governance and accountability are necessary.
-________________________________________
-Solutions for Ethical AI
-To build responsible AI systems, organizations must take proactive steps.
-Key solutions include:
-1. Bias Mitigation
-•	Use diverse and representative datasets
-•	Perform regular bias audits
-•	Apply fairness-focused algorithms
-2. Transparency
-•	Use Explainable AI (XAI)
-•	Clearly communicate how decisions are made
-3. Accountability
-•	Define responsibility across the AI lifecycle
-•	Implement audit systems
-4. Human Oversight
-•	Keep humans involved in critical decisions
-•	Avoid full automation in high-risk areas
-These strategies help ensure AI systems remain fair, reliable, and aligned with ethical principles.
-________________________________________
-AI for Social Good
-Despite its risks, AI also has the potential to create meaningful positive impact.
-AI for Social Good focuses on:
-•	Fairness
-•	Transparency
-•	Privacy protection
-•	Human-centered design
-Examples include:
-•	Improving healthcare diagnoses
-•	Detecting financial fraud
-•	Supporting environmental sustainability
-•	Enhancing public services
-When guided by ethical design, AI can help solve complex global problems and improve quality of life.
-________________________________________
-Conclusion
-AI is not inherently good or bad—it reflects the choices made by the people who design and deploy it.
-While AI offers significant benefits, issues such as bias, lack of transparency, and weak accountability show that ethical considerations are essential. Without careful design and governance, these systems can reinforce inequality and cause real harm.
-By combining:
-•	Strong ethical frameworks
-•	Effective governance
-•	Proactive soft ethics practices
-we can build AI systems that are fair, transparent, and trustworthy.
 
+- Laws and regulations  
+- Industry standards  
+- Organizational policies  
+- Accountability frameworks  
 
-``
+A key tool is **Ethical Impact Assessment (EIA)**, which helps:
+
+- Identify risks before deployment  
+- Evaluate fairness and privacy  
+- Prevent harmful outcomes  
+
+---
+
+## The Role of Soft Ethics
+
+Soft ethics focuses on voluntary responsibility beyond legal requirements.
+
+It includes:
+
+- Ethical guidelines  
+- Self-regulation  
+- Internal policies  
+
+### Benefits:
+- Faster response to risks  
+- Encourages responsible innovation  
+- Builds trust  
+
+In my view, soft ethics is essential because it allows organizations to act **before harm occurs**.
+
+---
+
+## Unethical Practices in AI Development
+
+Some organizations misuse ethics through:
+
+- **Ethics washing** – pretending to be ethical  
+- **Ethics shopping** – selecting convenient rules  
+- **Ethics dumping** – testing in weak-regulation regions  
+- **Ethics shirking** – avoiding responsibility  
+
+These practices undermine trust and highlight the need for strong governance.
+
+---
+
+## Solutions for Ethical AI
+
+To build responsible AI systems:
+
+### 1. Bias Mitigation
+- Use diverse datasets  
+- Conduct bias audits  
+- Apply fairness techniques  
+
+### 2. Transparency
+- Use Explainable AI  
+- Communicate clearly  
+
+### 3. Accountability
+- Define responsibility  
+- Implement audits  
+
+### 4. Human Oversight
+- Keep humans in decision-making  
+- Avoid full automation in high-risk areas  
+
+---
+
+## AI for Social Good
+
+AI can create positive impact when used responsibly.
+
+### Examples:
+- Healthcare improvements  
+- Fraud detection  
+- Environmental monitoring  
+- Public service enhancement  
+
+---
+
+## Conclusion
+
+AI is not inherently good or bad—it reflects human decisions.
+
+While AI offers major benefits, issues like bias and lack of transparency show the need for ethical oversight. By combining ethical frameworks, governance, and soft ethics, we can build systems that are fair and trustworthy.
+
+**The goal is not just better technology—but a more just and equitable future.**
