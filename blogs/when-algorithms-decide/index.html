@@ -1,23 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>When Algorithms Decide: The Hidden Bias Shaping Our Future</title>
 
 <link rel="icon" href="/fav.png">
+
 <link rel="stylesheet" href="/bootstrap-5/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/header.css">
+<link rel="stylesheet" href="/css/footer.css">
 <link rel="stylesheet" href="/css/theme.css">
 <link rel="stylesheet" href="/css/custom.css">
+<link rel="stylesheet" href="/css/single.css">
 
 <style>
-body {
+html, body {
   background-color: #0d0d0d;
-  color: #f5f5f5;
-}
-h1, h2 {
-  margin-top: 30px;
 }
 </style>
 
@@ -25,21 +27,40 @@ h1, h2 {
 
 <body>
 
-<div class="container mt-5">
-<div class="row">
+<header id="profileHeader">
+<nav class="navbar navbar-expand-lg">
+<div class="container-fluid mx-5">
+<a class="navbar-brand" href="/">
+<img src="/fav.png" width="30"> Matthew's Profile
+</a>
+</div>
+</nav>
+</header>
 
-<!-- MAIN CONTENT -->
-<div class="col-lg-9">
+<section id="single">
+<div class="container">
+<div class="row justify-content-center">
 
-<h1 class="text-center">When Algorithms Decide: The Hidden Bias Shaping Our Future</h1>
+<!-- MAIN -->
+<div class="col-sm-12 col-md-12 col-lg-9">
 
-<p class="text-center">June 25, 2026 • <span id="readingTime"></span></p>
+<div class="title mb-5">
+<h1 class="text-center mb-4">
+When Algorithms Decide: The Hidden Bias Shaping Our Future
+</h1>
 
-<div style="text-align:center; margin-bottom:25px;">
-<img src="/images/AI-Ethics.jpg" style="width:100%; border-radius:10px;">
+<div class="text-center">
+June 25, 2026 | <span id="readingTime"></span>
+</div>
 </div>
 
-<div class="page-content">
+<article class="page-content p-2">
+
+<div style="text-align:center; margin-bottom:25px;">
+<img src="/images/AI-Ethics.jpg" style="max-width:700px; border-radius:10px;">
+</div>
+
+
 
 <h2 id="intro">Introduction</h2>
 <p>
@@ -156,12 +177,16 @@ AI is reshaping society, offering both opportunities and challenges. Bias, lack 
 Ultimately, the goal is not just to build advanced technology, but to ensure that it aligns with human values and contributes to a just and equitable future.
 </p>
 
-</div>
+</article>
 </div>
 
-<!-- SIDEBAR -->
+<!-- SIDEBAR (styled like Code 2) -->
 <div class="col-lg-3">
-<h5>Table of Contents</h5>
+<div id="stickySideBar" class="sticky-sidebar">
+
+<aside class="toc">
+<h5>Table Of Contents</h5>
+<nav>
 <ul>
 <li><a href="#intro">Introduction</a></li>
 <li><a href="#frameworks">Frameworks</a></li>
@@ -175,17 +200,24 @@ Ultimately, the goal is not just to build advanced technology, but to ensure tha
 <li><a href="#social">Social Good</a></li>
 <li><a href="#conclusion">Conclusion</a></li>
 </ul>
+</nav>
+</aside>
 
+<aside class="tags">
 <h5>Tags</h5>
-<ul class="list-inline">
+<ul class="tags-ul list-unstyled list-inline">
 <li class="list-inline-item">AI</li>
 <li class="list-inline-item">Ethics</li>
 <li class="list-inline-item">Bias</li>
 </ul>
+</aside>
+
+</div>
 </div>
 
 </div>
 </div>
+</section>
 
 <script>
 const text = document.querySelector(".page-content").innerText;
